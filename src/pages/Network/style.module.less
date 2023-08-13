@@ -1,0 +1,134 @@
+/**
+ * @author lulongwen
+ * Date: 2023-03-11 12:02
+ * Description:
+ */
+
+.svg {
+  width: 100%;
+  height: calc(100% - 5px);
+  cursor: move;
+}
+
+.topo {
+  position: relative;
+  overflow: auto;
+  background-color: rgba(51, 56, 64, 0.85);
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+.setting {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 400px;
+  height: 600px;
+  background-color: #2b3037;
+  overflow: auto;
+  padding: 0 15px;
+  border-radius: 3px;
+  color: #ccc;
+  transition: all 0.5ms linear;
+}
+
+.label {
+  color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.operations-list {
+  position: absolute;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px 0;
+
+  span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 15px;
+
+    &:hover {
+      color: #409eff;
+      background-color: #eee;
+    }
+  }
+}
+
+.tool {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.switch-icon {
+  cursor: pointer;
+  transition: all 0.5ms linear;
+  background-color: rgba(37, 42, 47, 0.6);
+  color: #ddd;
+  display: inline-block;
+  padding: 5px 8px 8px;
+  border-radius: 3px;
+}
+
+.topo-line {
+  stroke-linecap: round;
+  stroke-width: 3px;
+  stroke-dasharray: 13 7;
+  fill: none;
+  animation: topo-dash 0.5s linear infinite;
+}
+
+.topo-line-anchor {
+  cursor: pointer;
+}
+
+.topo-text {
+  font-family: "Lato", "Source Han Sans CN", "Microsoft YaHei", sans-serif;
+  fill: #ddd;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.tip {
+  line-height: 1;
+  padding: 8px;
+  color: #eee;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 9999;
+  background: #252a2f;
+
+  &:after {
+    box-sizing: border-box;
+    display: block;
+    font-size: 10px;
+    width: 100%;
+    line-height: 0.8;
+    color: #252a2f;
+    content: "▼";
+    position: absolute;
+    text-align: center;
+  }
+
+  &.n:after {
+    margin: -2px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@keyframes topo-dash {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

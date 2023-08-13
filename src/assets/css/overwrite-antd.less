@@ -1,0 +1,132 @@
+.ant-btn > .anticon + span {
+  margin-left: 4px;
+}
+
+// 折叠菜单按钮
+.header-render {
+  padding-inline: 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+  .anticon {
+    padding: 4px;
+  }
+}
+
+.ant-breadcrumb {
+  font-size: 12px;
+}
+
+.ant-menu-inline.ant-menu-light {
+  height: 100%;
+  border-color: rgba(222, 222, 222, 0.35);
+  /*border-right: 0;*/
+}
+
+.ant-menu-vertical.ant-menu-sub,
+.ant-menu-vertical-left.ant-menu-sub,
+.ant-menu-vertical-right.ant-menu-sub {
+  max-height: inherit !important;
+}
+
+.ant-tabs.gutter {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.ant-divider-vertical {
+  margin: 0 8px !important;
+}
+
+.ant-table-wrapper.small {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.ant-list-grid .ant-col > .ant-list-item {
+  padding-inline: 0;
+}
+
+
+.ant-card .ant-card-actions > li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.ant-list.highlight {
+  .ant-list-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &.active {
+      background-color: rgba(230, 247, 255, 0.9);
+    }
+
+    &.error {
+      border-left: 4px solid rgb(245, 34, 45);
+    }
+  }
+}
+
+// Card
+.ant-pro-card-border.secondary {
+  border-color: rgba(196, 200, 225, 0.2);
+
+  .ant-pro-card-header {
+    padding-bottom: 8px;
+    background-color: rgba(196, 200, 225, 0.2);
+  }
+
+  .ant-pro-card-title {
+    color: inherit;
+  }
+}
+
+
+//Avatar
+.ant-avatar {
+  background-color: rgb(245 245 245);
+  color: #f56a00;
+}
+
+
+// Formily
+.__small__ {
+
+  &.ant-formily-layout {
+    .ant-formily-item,
+    .ant-btn.ant-btn-sm {
+      font-size: 12px;
+    }
+  }
+
+  [class^="ant-formily-array-items"],
+  .ant-input-affix-wrapper,
+  .ant-select-single.ant-select-sm .ant-select-selector {
+    font-size: 12px;
+  }
+
+  .ant-formily-item-layout-vertical .ant-formily-item-label {
+    min-height: 24px;
+    padding-bottom: 0;
+  }
+
+  .ant-formily-item-feedback-layout-loose {
+    margin-bottom: 8px;
+  }
+
+  .ant-formily-item .ant-formily-item-control .ant-formily-item-control-content .ant-formily-item-control-content-component {
+    min-height: 24px;
+    line-height: 24px;
+  }
+
+}

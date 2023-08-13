@@ -1,0 +1,114 @@
+@text-color-secondary: rgba(0, 0, 0, 0.45);
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  margin: -24px -24px 24px;
+  background-color: rgb(172 219 255 / 85%); // rgb(227 237 255)
+
+  .bg-shapes-right {
+    position: absolute;
+    height: 100%;
+    width: 360px;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      width: 300px;
+      height: 150px;
+      background: rgb(255 255 255 / 10%);
+      position: absolute;
+      right: -60px;
+      top: 0;
+      border-radius: 4px;
+      transform: skew(25deg, -10deg);
+      transform-origin: top left;
+    }
+
+    &::after {
+      content: '';
+      width: 150px;
+      height: 600px;
+      background: rgb(255 255 255 / 15%);
+      position: absolute;
+      right: 0;
+      top: 30px;
+      border-radius: 6px;
+      transform: skew(25deg, 10deg);
+      transform-origin: top left;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 300px;
+    height: 150px;
+    background: rgb(255 255 255 / 10%);
+    position: absolute;
+    left: -90px;
+    top: 0;
+    border-radius: 6px;
+    transform: skew(25deg, -12deg);
+    transform-origin: top left;
+  }
+
+  &::after {
+    content: '';
+    width: 150px;
+    height: 600px;
+    background: rgb(255 255 255 / 15%);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    border-radius: 4px;
+    transform: skew(-25deg, 10deg);
+    transform-origin: top left;
+  }
+
+  :global {
+    .ant-btn.ant-btn-lg {
+      background-color: rgb(54 138 255);
+    }
+  }
+}
+
+.card-info {
+  margin-top: 16px;
+  margin-left: 40px;
+  zoom: 1;
+
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+
+  & > div {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: left;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 4px;
+
+      &:first-child {
+        font-size: 12px;
+        line-height: 20px;
+        color: @text-color-secondary;
+      }
+    }
+  }
+}

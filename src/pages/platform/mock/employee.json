@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "message": "Success",
+  "i18nKey": {
+    "key": "",
+    "placeholder": "",
+    "defaultMsg": "Success",
+    "displayMsg": "Success"
+  },
+  "traceId": "25-c9be-23f-90f-2309",
+  "data": [
+    {
+      "id": 23,
+      "mobile": "",
+      "mobileZone": "86",
+      "name": "中文名",
+      "nameEn": "英文名",
+      "nickName": "花名",
+      "tenantKey": "testGroup",
+      "inOffice": true,
+      "empId": "DING^0809admin",
+      "dingTalk": "admin",
+      "dingId": "admin",
+      "email": "",
+      "robot": false
+    }
+  ]
+}

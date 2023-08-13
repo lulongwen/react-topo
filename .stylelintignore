@@ -1,0 +1,17 @@
+/lambda/
+/scripts
+/config
+.history
+public
+dist
+.umi
+mock
+docs
+build
+node_modules
+.umi
+.umi-production
+
+global.css
+
+README.md

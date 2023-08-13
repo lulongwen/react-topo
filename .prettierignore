@@ -1,0 +1,9 @@
+node_modules
+.umi
+.umi-production
+
+build
+dist
+mock
+package.json
+README.md

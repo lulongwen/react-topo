@@ -1,0 +1,11 @@
+/lambda/
+/scripts
+/config
+.history
+public
+dist
+build
+.umi
+mock
+docs
+README.md

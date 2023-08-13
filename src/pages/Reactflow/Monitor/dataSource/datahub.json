@@ -1,0 +1,114 @@
+{
+    "type": "object",
+    "properties": {
+      "app": {
+        "title": "应用名称",
+        "x-decorator": "FormItem",
+        "x-component": "Select",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "x-designable-id": "8mno9zkk1ip",
+        "x-index": 0,
+        "name": "app"
+      },
+      "accessId": {
+        "type": "string",
+        "title": "AccessId",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "accessId",
+        "x-designable-id": "3r7pefaurf0",
+        "x-index": 1
+      },
+      "accessKey": {
+        "type": "string",
+        "title": "AccessKey",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "accessKey",
+        "x-designable-id": "uvq3g8utf3n",
+        "x-index": 2
+      },
+      "endpoint": {
+        "type": "string",
+        "title": "EndPoint",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "endpoint",
+        "x-designable-id": "32hp4sq9y4z",
+        "x-index": 3
+      },
+      "project": {
+        "type": "string",
+        "title": "Project",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "project",
+        "x-designable-id": "wfyavg3aeul",
+        "x-index": 4
+      },
+      "topic": {
+        "type": "string",
+        "title": "Topic",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "topic",
+        "x-designable-id": "ebl7ywmpnhz",
+        "x-index": 5
+      },
+      "subid": {
+        "type": "string",
+        "title": "SubId",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "subid",
+        "x-designable-id": "52qzwf28l9n",
+        "x-index": 6
+      },
+      "effective": {
+        "type": "boolean",
+        "title": "生效开关",
+        "x-decorator": "FormItem",
+        "x-component": "Switch",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "default": true,
+        "name": "effective",
+        "x-designable-id": "2nydco12rzz",
+        "x-index": 7
+      },
+      "convergence": {
+        "type": "boolean",
+        "title": "分组列收敛",
+        "x-decorator": "FormItem",
+        "x-component": "Switch",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "convergence",
+        "x-designable-id": "29ma4kqiqqv",
+        "x-index": 8
+      }
+    },
+    "x-designable-id": "fhainj6jf65"
+  }

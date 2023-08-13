@@ -1,0 +1,67 @@
+.Draggable {
+  position: relative;
+  //display: flex;
+  //align-items: center;
+  //flex-direction: column;
+  //justify-content: center;
+  transition: transform 250ms ease;
+
+  > .button {
+    background-color: #90f;
+    transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0);
+    transition: box-shadow 300ms ease;
+  }
+
+  &:not(.handle) {
+    > .button {
+      touch-action: none;
+      cursor: grab;
+
+      &:focus-visible:not(.active &) {
+        box-shadow: 0 0 0 3px #4c9ffe;
+      }
+    }
+  }
+
+  &.handle {
+    > .button {
+      --action-background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &.dragging {
+    z-index: 1;
+    transition: none;
+
+    * {
+      cursor: grabbing;
+    }
+
+    > .button {
+      --box-shadow: -1px 0 15px 0 rgba(34, 33, 81, 0.01),
+        0px 15px 15px 0 rgba(34, 33, 81, 0.25);
+
+      &:focus-visible {
+        --box-shadow: 0 0px 10px 2px #4c9ffe;
+      }
+    }
+
+  }
+
+  &.dragOverlay,
+  &.dragging {
+    > .button {
+      animation: pop 250ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+    }
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0);
+  }
+  100% {
+    transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0);
+    box-shadow: var(--box-shadow);
+  }
+}

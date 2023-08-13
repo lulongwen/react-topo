@@ -1,0 +1,324 @@
+.rk-topo {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+}
+.micro-topo-chart {
+  height: 100%;
+  width: 100%;
+  background-color: #333840;
+}
+.micro-topo-chart .topo-svg {
+  display: block;
+  width: 100%;
+}
+.micro-topo-chart .topo-line {
+  stroke-linecap: round;
+  stroke-width: 1.3px !important;
+  stroke-dasharray: 13 7;
+  fill: none;
+  animation: topo-dash 1s linear infinite !important;
+}
+.micro-topo-chart .topo-line-anchor {
+  cursor: pointer;
+}
+.micro-topo-chart .topo-text {
+  font-family: 'Lato', 'Source Han Sans CN', 'Microsoft YaHei', sans-serif;
+  fill: #ddd;
+  font-size: 11px;
+  opacity: 0.8;
+}
+.micro-topo-chart .topo-tool {
+  display: none;
+}
+.micro-topo-chart .topo-tool-i {
+  cursor: pointer;
+}
+.micro-topo-chart .tool-hexagon {
+  fill: #3f4450;
+  stroke: #217ef2;
+  stroke-width: 2;
+  stroke-opacity: 0.5;
+}
+.micro-topo-chart .topo-tool-i:hover .tool-hexagon {
+  stroke-opacity: 1;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 8px;
+  color: #eee;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #252a2f;
+}
+.d3-tip:after {
+  font-size: 10px;
+  width: 100%;
+  line-height: 0.8;
+  color: #252a2f;
+  content: '\25BC';
+  position: absolute;
+  text-align: center;
+}
+.d3-tip.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+.d3-tip p {
+  margin-bottom: 8px;
+}
+.d3-tip p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes topo-dash {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*trace*/
+.rk-trace {
+  flex-grow: 1;
+  height: 100%;
+  min-height: 0;
+}
+.rk-trace-inner {
+  height: 100%;
+  display: flex;
+  min-height: 0;
+}
+.rk-trace-t-tool {
+  flex-shrink: 0;
+  background-color: rgba(196, 200, 225, 0.2);
+  justify-content: space-between;
+  padding-right: 5px;
+select {
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  border-style: unset;
+  margin: 0 10px;
+}
+padding-top: 1px;
+border-bottom: 1px solid #c1c5ca41;
+border-right: 1px solid #c1c5ca41;
+height: 35px;
+}
+.rk-trace-t-wrapper {
+  overflow: auto;
+  flex-grow: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.rk-trace-t-loading {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  margin-top: 40px;
+  line-height: 88px;
+  overflow: hidden;
+.icon {
+  width: 30px;
+  height: 30px;
+}
+}
+.rk-trace-t {
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+  flex-grow: 1;
+  position: relative;
+}
+.rk-trace-tr {
+&:hover {
+   background-color: rgba(0, 0, 0, 0.04);
+ }
+}
+.rk-trace-td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+&.selected {
+   background-color: #ededed;
+ }
+}
+.rk-trace-success {
+  border-left: 4px solid rgba(46, 47, 51, 0.1);
+}
+.rk-trace-warning {
+  border-left: 4px solid #fbb03b;
+}
+.rk-trace-error {
+  border-left: 4px solid #e54c17;
+}
+.rk-tag {
+  border-radius: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #40454e;
+  color: #eee;
+}
+.rk-log-box {
+  color: #3d444f;
+}
+.rk-trace-detail {
+  flex-shrink: 0;
+  height: 100%;
+  width: 75%;
+  overflow-y: auto;
+.rk-btn.ghost {
+  background: rgba(0, 0, 0, 0.5);
+}
+}
+.rk-trace-detail-wrapper {
+  padding: 8px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.rk-trace-detail-ids {
+  background-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  border-style: unset;
+  color: inherit;
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.rk-trace-log-btn {
+  padding: 3px 9px;
+  background-color: #484b55;
+  border-radius: 4px;
+  color: #eee;
+  font-weight: normal;
+  cursor: pointer;
+
+&.bg-blue {
+   background-color: #448dfe;
+ }
+}
+.rk-tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0px 7px;
+  background-color: #40454e;
+  color: #eee;
+}
+.rk-icon-trace {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  fill: rgba(46, 47, 51, 0.15);
+}
+
+//trace-tree
+.trace-tree-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0px 7px;
+  background-color: #40454e;
+  color: #eee;
+  font-size: 11px;
+}
+.trace-tree-charts {
+  overflow: auto;
+  flex-grow: 1;
+  height: 100%;
+}
+.trace-node .group {
+  cursor: pointer;
+  fill-opacity: 0;
+}
+.trace-tree-inner {
+  height: 100%;
+}
+.trace-node-container {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 5px;
+  cursor: pointer;
+  &:hover {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+}
+.trace-node .node-text {
+  font: 12.5px sans-serif;
+  pointer-events: none;
+}
+.domain {
+  display: none;
+}
+.tree-link {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 2px;
+}
+.time-charts-item {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid;
+  font-size: 11px;
+  border-radius: 4px;
+}
+.trace-tree {
+  fill: rgba(0, 0, 0, 0);
+  flex-grow: 1;
+}
+.trace-tree .trace-node rect {
+  &:hover {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+}
+.dialog-c-text {
+  white-space: pre;
+  overflow: auto;
+  font-family: monospace;
+}
+
+//trace-list
+.time-charts {
+  overflow: auto;
+  padding: 10px 30px;
+  position: relative;
+  min-height: 150px;
+}
+.trace-node .group {
+  cursor: pointer;
+  fill-opacity: 0;
+}
+.trace-node-container {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 5px;
+  cursor: pointer;
+  &:hover {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+}
+.trace-node .node-text {
+  font: 12.5px sans-serif;
+  pointer-events: none;
+}
+.domain {
+  display: none;
+}
+.time-charts-item {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid;
+  font-size: 11px;
+  border-radius: 4px;
+}
+.trace-list {
+  fill: rgba(0, 0, 0, 0);
+}
+.trace-list .trace-node rect {
+  &:hover {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+}
+.dialog-c-text {
+  white-space: pre;
+  overflow: auto;
+  font-family: monospace;
+}

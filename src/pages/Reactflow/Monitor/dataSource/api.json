@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "app": {
+      "title": "应用名称",
+      "x-decorator": "FormItem",
+      "x-component": "Select",
+      "x-validator": [],
+      "x-component-props": {},
+      "x-decorator-props": {},
+      "name": "app",
+      "x-designable-id": "gmlxytx5i63",
+      "x-index": 0
+    },
+    "effective": {
+      "type": "boolean",
+      "title": "生效开关",
+      "x-decorator": "FormItem",
+      "x-component": "Switch",
+      "x-validator": [],
+      "x-component-props": {},
+      "x-decorator-props": {},
+      "name": "effective",
+      "x-designable-id": "dhyr6mn7czh",
+      "x-index": 1
+    },
+    "convergence": {
+      "type": "boolean",
+      "title": "分组列收敛",
+      "x-decorator": "FormItem",
+      "x-component": "Switch",
+      "x-validator": [],
+      "x-component-props": {},
+      "x-decorator-props": {},
+      "name": "convergence",
+      "x-designable-id": "0qjidpj7tyr",
+      "x-index": 2
+    }
+  },
+  "x-designable-id": "w49w83t4qrj"
+}

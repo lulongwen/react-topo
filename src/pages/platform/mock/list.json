@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "message": "Success",
+  "i18nKey": {
+    "key": "",
+    "placeholder": "",
+    "displayMsg": "Success",
+    "defaultMsg": "Success"
+  },
+  "traceId": "25-c9be-23f-90f-2309",
+  "data": {
+    "total": 12,
+    "data": [
+      {
+        "id": 1,
+        "name": "图表名称",
+        "desc": "图表描述",
+        "remark": "备注信息",
+        "tenantKey": "testGroup",
+        "data": [
+          {
+            "id": 0,
+            "name": "折线图",
+            "type": "LINE",
+            "config": [
+              {
+                "app": "应用名称",
+                "monitorId": 23,
+                "metricType": "1",
+                "alias": "别名",
+                "legend": "图例名称",
+                "subKey": null,
+                "key": null,
+                "function": null,
+                "combine": {
+                  "type": "NOT",
+                  "combines": [
+                    {
+                      "subKey": 0,
+                      "keys": [
+                        "ConsumeMessage_2Y, Y"
+                      ],
+                      "operator": "EQ",
+                      "value": "Y"
+                    }
+                  ]
+                }
+              }
+            ],
+            "source": [
+              {
+                "name": "",
+                "subKey": 0,
+                "metricValue": null,
+                "keys": [
+                  "ConsumeMessage_2Y, Y"
+                ],
+                "values": [
+                  [
+                    "时间"
+                  ],
+                  [
+                    "数据"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "creator": "创建人",
+        "operator": "修改人",
+        "created_at": "创建时间",
+        "updated_at": "更新时间",
+        "delete": false
+      }
+    ]
+  }
+}
